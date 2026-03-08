@@ -89,7 +89,7 @@ let dozent = { x: 1350, y: 300, size: 150, name: "Prof. Dr. Design" };
 function preload() {
   playerSprite = loadImage('assets/charsprites.png'); // 384 x 640 px
 
-  campusImg = loadImage('assets/okumapklein.png'); // Campusbild (Hintergrund)
+  campusImg = loadImage('assets/Okumapklein.png'); // Campusbild (Hintergrund)
 
   frontImg = loadImage('assets/frontfinklein.png'); // Front-Layer Bild
   
@@ -458,6 +458,7 @@ function mousePressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
 
 
 
