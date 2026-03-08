@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokuquest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 255, 255, 255;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            outline: 4px solid rgba(0, 0, 0);
+        }
+        
+        .header {
+            background: black;
+            color: rgb(255, 255, 255);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgb(0, 0, 0);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.1s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+
+        }
+        
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .image-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 10px;
+            min-height: 400px;
+        }
+        
+        .image-placeholder {
+            text-align: center;
+            color: #999;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .text-section h2 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .text-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .text-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .text-section li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.history.back()">← Zurück</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Variables and Parameters</h1>
+            <p>Das Konzept von Variablen und Parametern in der Programmierung</p>
+        </div>
+        
+        <div class="content">
+            <div class="image-section">
+                <div class="image-placeholder">
+                    <img src="./assets/parameter.jpg" alt="Parameter">
+                    <img src="./assets/anwendung parameter.jpg" alt="Anwendung Parameter">
+                    <img src="./assets/matrix.jpg" alt="Matrix">
+                </div>
+            </div>
+            
+            <div class="text-section">
+                <h2>Über die Session</h2>
+                <p>In der zweiten Session begannen wir erneut mit einer analogen Aufgabe, der sogenannten „Morphological Box“. 
+                    Dabei sollten wir drei Parameter festlegen und diese so miteinander kombinieren, 
+                    dass insgesamt neun verschiedene Designs entstehen.
+                </p>
+                <p>Ich entschied mich für drei unterschiedliche Formen, 
+                    drei verschiedene Linientypen sowie drei Varianten von Fill-ins. 
+                    Durch die Kombination dieser Parameter konnten verschiedene gestalterische Ergebnisse entstehen.</p>
+
+                <p>Anschließend erhielten wir eine weitere Matrix,
+                     die wir ausfüllen sollten. Diese stellte unterschiedliche gestalterische Elemente gegenüber,
+                     die im weiteren Verlauf miteinander kombiniert werden sollten. </p>
+                <p>Zum Ende der Session begannen wir damit, einen Wireframe für ein Drawing-Tool zu skizzieren. 
+                    Ich entschied mich dafür, ein Tool zur Erstellung von Fonts zu konzipieren.
+                     Zum einen war dies einer der vorgeschlagenen Ansätze,
+                     zum anderen habe ich bereits ein grundsätzliches Interesse an Schrift und Typografie. Zu diesem Zeitpunkt war mir jedoch noch nicht ganz klar,
+                      wie ich das Konzept später technisch umsetzen könnte und welche Funktionen im Rahmen meiner Kenntnisse überhaupt realisierbar sind.</p>
+                
+                <h3 style="color: #000000; margin-top: 20px;">Reflexion</h3>
+                <p>Das Kombinieren verschiedener Parameter in der analogen Übung hat mir verdeutlicht,
+                     wie viel Variation bereits durch vergleichsweise wenige Rahmenbedingungen entstehen kann. 
+                     Besonders im Vergleich mit den Ergebnissen in der Gruppe war es spannend zu sehen, 
+                     wie unterschiedlich die Resultate aus derselben Matrix ausfallen konnten und
+                      dennoch alle den vorgegebenen Parametern entsprachen.</p>
+                <p>Das Erstellen eines Wireframes hat mir zwar einen groben Überblick für den Einstieg in das Drawing-Tool-Projekt gegeben,
+                         dennoch fiel es mir zunächst schwer, mir anhand des Wireframes ein genaues Bild meiner späteren Website zu machen. 
+                         Erst als ich das Konzept des Wireframes im weiteren Verlauf des Projekts erneut aufgriff, wurde mir deutlich,
+                         wie hilfreich und sinnvoll dieses Werkzeug für die Strukturierung und Planung der Website sein kann.</p>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

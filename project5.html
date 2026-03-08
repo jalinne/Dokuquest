@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokuquest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 255, 255, 255;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            outline: 4px solid rgba(0, 0, 0);
+        }
+        
+        .header {
+            background: black;
+            color: rgb(255, 255, 255);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgb(0, 0, 0);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.1s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+
+        }
+        
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .image-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 10px;
+            min-height: 400px;
+        }
+        
+        .image-placeholder {
+            text-align: center;
+            color: #999;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .text-section h2 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .text-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .text-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .text-section li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.history.back()">← Zurück</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Riso Projekt</h1>
+            <p>Einführung in den Risodruck</p>
+        </div>
+        
+        <div class="content">
+            <div class="image-section">
+                <div class="image-placeholder">
+                    <img src="./assets/riso cover.jpg" alt="Riso Cover">
+                    <img src="./assets/riso sammlung.jpg" alt="Riso Sammlung">
+                    <img src="./assets/riso index.jpg" alt="Riso Index">
+                    <img src="./assets/riso plakat.jpg" alt="Riso Plakat">
+                </div>
+            </div>
+            
+            <div class="text-section">
+                <h2>Über die Session</h2>
+                <p>Im Rahmen des Riso-Projekts entwickelten wir in einer Gruppe eine kleine Publikation auf Basis einer selbst angelegten Sammlung.
+                     Ziel war es, den Risografen kennenzulernen und sich gestalterisch mit dem Thema „Sammlung“ auseinanderzusetzen.
+
+                </p>
+                <p>Unsere Sammlung basierte auf der Gegenüberstellung der Themenbereiche Bio und Technik. Auf der technischen Seite sammelten wir Elektroschrott wie Platinen, alte Handys und Kabel, während wir auf der biologischen Seite unter anderem Insekten, Bienenwaben und Schmetterlingsflügel zusammentrugen. Ziel war es, Unterschiede, aber auch mögliche Verbindungen zwischen organischen und technischen Strukturen sichtbar zu machen.</p>
+
+                <p>Diese Gegenüberstellung spiegelt sich auch im Aufbau der Publikation wider: Sie besitzt zwei Cover und kann von beiden Seiten gelesen werden, sodass sich die beiden Themenbereiche zunächst getrennt erschließen. Im Inneren werden die Sammlungen einander gegenübergestellt. Ein herausnehmbares Innenblatt zeigt den Index in Form eines Schmetterlingskörpers, dessen Flügel die beiden Themen visuell verbinden – ein Flügel als Collage aus technischen Bauteilen, der andere als organischer Schmetterlingsflügel. Beim Aufklappen eines A2-Plakats werden beide Bereiche schließlich zusammengeführt und in einer hybriden Figur vereint, die Elemente aus Bio und Technik miteinander verschmelzen lässt.</p> </p>
+              
+                <h3 style="color: #000000; margin-top: 20px;">Reflexion</h3>
+                <p>Das Riso-Projekt empfand ich zu Beginn als herausfordernd, da sich der rote Faden der Publikation erst im Laufe des Arbeitsprozesses entwickelte. Zusätzlich mussten wir beim Gestalten der einzelnen Seiten stets die farbliche Trennung mitdenken, da im Risodruck jede Farbe separat gedruckt wird. Besonders dieser Aspekt fiel mir anfangs schwer, da ich Probleme hatte, mir das endgültige Ergebnis kontinuierlich vorzustellen. Umso größer war die Freude, als sich am Ende alles stimmig zusammenfügte.</p>
+                <p>in zentrales Learning für mich war der Umgang mit Fehlern im Gestaltungsprozess. Anstatt sie zu verwerfen, haben wir versucht, sie als Ausgangspunkt für neue Ideen zu nutzen und in das Konzept zu integrieren. Beim ersten Druck des Covers passierte uns beispielsweise der Fehler, die zweite Farbe spiegelverkehrt über die erste zu drucken. Das Ergebnis hatte jedoch deutlich mehr Charakter als unsere ursprüngliche Idee und stellte sogar visuell die Verschmelzung der beiden Themenbereiche dar. Diesen Effekt griffen wir später beim Plakat bewusst erneut auf.</p>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
