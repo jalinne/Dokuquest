@@ -91,7 +91,7 @@ function preload() {
 
   campusImg = loadImage('assets/okumapklein.jpg'); // Campusbild (Hintergrund)
 
-  frontImg = loadImage('assets/frontfin.png'); // Front-Layer Bild
+  frontImg = loadImage('assets/frontfinklein.png'); // Front-Layer Bild
   
   profdrImg = loadImage('assets/profdr.png'); // Prof.Dr.Design
 }
@@ -458,5 +458,6 @@ function mousePressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
 
 
